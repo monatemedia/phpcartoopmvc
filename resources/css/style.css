@@ -1,0 +1,64 @@
+/*
+    My Online Store Stylesheet
+*/
+
+/*
+    Template Styles
+*/
+body {
+    margin: 0;
+    padding: 20px;
+    background: #eee;
+    font-family: arial;
+    font-size: 13px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    width: 900px;
+    background: #fff;
+}
+    h1 {
+        margin: 0;
+        padding: 30px;
+        background: green;
+        color: #fff;
+        font-size: 34px;
+    }
+
+    .secondarynav {
+        text-align: right;
+        margin: 0 0 10px 0;
+    }
+
+    .nav {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background: #10ad00;
+    }
+        .nav li {
+            float: left;
+            border-right: 1px solid green;
+        }
+        .nav a {
+            display: block;
+            padding: 8px 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            background: #0e9900;
+        }
+        .nav li.active a {
+            background: green;
+        }
+
+
+/*
+    Page Specific Styles
+*/
