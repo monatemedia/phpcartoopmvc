@@ -14,10 +14,11 @@ COMPLETED:
 -- Create the Template object
 -- Create the Categories object so we can set up the navigation
 -- Work on the Products object, so we can display a list of all products
+-- Allow products to be sorted into categories
+----get one specific product
 
 TO DO:
 
--- Allow products to be sorted into categories
 -- Create the products detail view
 -- Build out the cart page
 -- Create cart object, so items can be added to the cart
