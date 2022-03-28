@@ -12,10 +12,10 @@ COMPLETED:
 -- Discuss coding style guide 
 ----http://www.codeigniter.com/user_guide/general/styleguide.html
 -- Create the Template object
+-- Create the Categories object so we can set up the navigation
 
 TO DO:
 
--- Create the Categories object so we can set up the navigation
 -- Work on the Products object, so we can display a list of all products
 -- Allow products to be sorted into categories
 -- Create the products detail view
