@@ -64,6 +64,21 @@ class Products
         else
         {
             // get all products
+            if ($result = $this->Database->query("SELECT * FROM " . $this->db_table . " ORDER BY name"))
+            {
+                if ($result->num_rows > 0)
+                {
+                    while ($row = $result->fetch_array())
+                    {
+                        $data[] = array(
+                            'id' => $row['id'],
+                            'name' => $row['name'],
+                            'price' => $row['price'],
+                            'image' => $row['image']
+                        );
+                    }
+                }
+            }
         }
         return $data;
     }

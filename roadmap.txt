@@ -16,6 +16,7 @@ COMPLETED:
 -- Work on the Products object, so we can display a list of all products
 -- Allow products to be sorted into categories
 ----get one specific product
+----get all products
 
 TO DO:
 

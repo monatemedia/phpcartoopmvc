@@ -3,7 +3,7 @@
 include('app/init.php');
 
 echo "<pre>";
-print_r($Products->get(1));
+print_r($Products->get());
 echo "</pre>";
 exit;
 
