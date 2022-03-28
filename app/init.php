@@ -21,8 +21,12 @@ define('SITE_NAME', 'My Online Store');
 define('SITE_PATH', 'http://localhost/phpcartoopmvc/');
 define('IMAGE_PATH', 'http://localhost/phpcartoopmvc/resources/images/');
 
-// create objects
+// include objects
 include('app/models/m_template.php');
+include('app/models/m_categories.php');
+
+// create objects
 $Template = new Template();
+$Categories = new Categories();
 
 session_start();
