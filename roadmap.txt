@@ -17,10 +17,10 @@ COMPLETED:
 -- Allow products to be sorted into categories
 ----get one specific product
 ----get all products
+-- Create the products detail view
 
 TO DO:
 
--- Create the products detail view
 -- Build out the cart page
 -- Create cart object, so items can be added to the cart
 -- Add ability to remove all products in cart

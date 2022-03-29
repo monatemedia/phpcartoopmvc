@@ -82,4 +82,50 @@ class Products
         }
         return $data;
     }
+
+    /*
+        Creation of page elements
+    */
+
+    /**
+     * Create product table using info from database
+     * 
+     * @access public
+     * @param int (optional), int (optional)
+     * @return string
+     */
+    public function create_product_table($cols = 4, $category = NULL)
+    {
+        // get Products
+        if ($category != NULL)
+        {
+            // get products from specific category
+        }
+        else
+        {
+            $products = $this->get();
+        }
+
+        $data = '';
+
+        // loop through each productsif ( ! empty($products))
+        {
+            $i = 1;
+            foreach ($products as $product)
+            {
+                $data .= '<li';
+                if ($i == $cols)
+                {
+                    $data .= ' class="last"';
+                    $i = 0;
+                }
+                $data .= '><a href="' . SITE_PATH . 'product.php?id=' . $product['id'] . '">';
+                $data .= '<img src="' . IMAGE_PATH . $product['image'] . '" alt="' . $product['name'] . '"><br>';
+                $data .= '<strong>' . $product['name'] . '</strong></a><br/>$' . $product['price'];
+                $data .= '<br><a class="button_sml" href="' . SITE_PATH . 'cart.php?id=' . $product['id'] . '">Add to cart</a></li>';
+                $i++;
+            }
+        }
+        return $data;
+    }
 }
