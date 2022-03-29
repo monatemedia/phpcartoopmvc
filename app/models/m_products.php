@@ -83,6 +83,37 @@ class Products
         return $data;
     }
 
+    /**
+     * Retireve product information for all products in a specific category
+     * 
+     * @access public
+     * @param int (optional)
+     * @return string
+     */
+    public function get_in_category($id)
+    {
+        $data = array();
+        if ($stmt = $this->Database->prepare("SELECT id, name, price, image FROM " . $this->db_table . " WHERE category_id = ? ORDER BY name"))
+        {
+            $stmt->bind_param("i", $id);
+            $stmt->execute();
+            $stmt->store_result();
+
+            $stmt->bind_result($prod_id, $prod_name, $prod_price, $prod_image);
+            while ($stmt->fetch())
+            {
+                $data[] = array(
+                    'id' => $prod_id, 
+                    'name' => $prod_name,
+                    'price' => $prod_price,
+                    'image' => $prod_image);
+            }
+            $stmt->close();
+        }
+        return $data;
+
+    }
+
     /*
         Creation of page elements
     */
@@ -99,7 +130,7 @@ class Products
         // get Products
         if ($category != NULL)
         {
-            // get products from specific category
+            $products = $this->get_in_category($category);
         }
         else
         {
