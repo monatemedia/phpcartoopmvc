@@ -18,10 +18,11 @@ COMPLETED:
 ----get one specific product
 ----get all products
 ----create products navigation
-
+-- Create the products detail view
+----Set up v_public_product php
 
 TO DO:
--- Create the products detail view
+
 -- Build out the cart page
 -- Create cart object, so items can be added to the cart
 -- Add ability to remove all products in cart
