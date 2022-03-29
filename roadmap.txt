@@ -21,10 +21,12 @@ COMPLETED:
 -- Create the products detail view
 ----Set up v_public_product php
 ---- added HTML and CSS for display and styling 
+-- Build out the cart page
+---- Build php code for v_public_cart.php
 
 TO DO:
 
--- Build out the cart page
+
 -- Create cart object, so items can be added to the cart
 -- Add ability to remove all products in cart
 -- Display products in the cart
