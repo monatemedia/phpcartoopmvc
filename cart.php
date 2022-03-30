@@ -18,9 +18,15 @@ if (isset($_GET['id']) && is_numeric($_GET['id']))
         $Cart->add($_GET['id']);
         $Template->set_alert('Item has been added to the cart!');
     }
-    echo "<pre>";
-    print_r($_SESSION['cart']);
-    echo "</pre>";
+    $Template->redirect(SITE_PATH . 'cart.php');
+
+}
+
+if (isset($_GET['empty']))
+{
+    $Cart->empty_cart();
+    $Template->set_alert('Shopping cart emptied!');
+    $Template->redirect(SITE_PATH . 'cart.php');
 }
 
 $Template->load('app/views/v_public_cart.php', 'Shopping Cart');

@@ -27,6 +27,7 @@ COMPLETED:
 ---- Clean up css style code for shopping cart 
 -- Create cart object, so items can be added to the cart
 ---- Build out add functionality to shopping cart
+---- Build out empty cart functionality
 
 
 TO DO:

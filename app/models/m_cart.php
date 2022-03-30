@@ -45,4 +45,16 @@ class cart
         }
         $_SESSION['cart'] = $cart;
     }
+    
+    /**
+     * Empties all items from cart
+     * 
+     * @access public
+     * @param
+     * @return null
+     */    
+    public function empty_cart()
+    {
+        unset($_SESSION['cart']);
+    }
 }
