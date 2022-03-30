@@ -111,7 +111,32 @@ class Products
             $stmt->close();
         }
         return $data;
+    }
+    /**
+     * Checks to ensure product exists
+     * 
+     * @access public
+     * @param int
+     * @return bool
+     */
+    public function product_exists($id)
+    {
+        if ($stmt = $this->Database->prepare("SELECT id from $this->db_table WHERE id = ?"))
+        {
+            $stmt->bind_param('i', $id);
+            $stmt->execute();
+            $stmt->store_result();
+            $stmt->bind_result($id);
+            $stmt->fetch();
 
+            if ($stmt->num_rows > 0)
+            {
+                $stmt->close();
+                return TRUE;
+            }
+            $stmt->close();
+            return FALSE;
+        }
     }
 
     /*

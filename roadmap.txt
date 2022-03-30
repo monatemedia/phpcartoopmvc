@@ -28,6 +28,7 @@ COMPLETED:
 -- Create cart object, so items can be added to the cart
 ---- Build out add functionality to shopping cart
 ---- Build out empty cart functionality
+---- Patch bug fixes and add navigation
 
 
 TO DO:
