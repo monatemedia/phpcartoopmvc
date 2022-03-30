@@ -25,11 +25,13 @@ COMPLETED:
 ---- Build php code for v_public_cart.php
 ---- Build css style code for shopping cart
 ---- Clean up css style code for shopping cart 
+-- Create cart object, so items can be added to the cart
+---- Build out add functionality to shopping cart
+
 
 TO DO:
 
 
--- Create cart object, so items can be added to the cart
 -- Add ability to remove all products in cart
 -- Display products in the cart
 -- Add ability to remove/change number of products in cart
