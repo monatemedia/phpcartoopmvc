@@ -29,13 +29,13 @@ COMPLETED:
 ---- Build out add functionality to shopping cart
 ---- Build out empty cart functionality
 ---- Patch bug fixes and add navigation
+-- Add ability to remove all products in cart
+-- Display products in the cart
+---- Build out controller for display
 
 
 TO DO:
 
-
--- Add ability to remove all products in cart
--- Display products in the cart
 -- Add ability to remove/change number of products in cart
 -- Build out ability to display # of items/cost of items in cart in the page header
 -- Add tax support
