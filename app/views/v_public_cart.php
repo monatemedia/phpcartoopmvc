@@ -17,7 +17,7 @@
             </li>
             
             <li>
-                <div class="col1">Product Name:</div>
+                <div class="col1">Beach Toys</div>
                 <div class="col2"><input name="product" value="1"></div>
                 <div class="col3">$8.99</div>
                 <div class="col4">$8.99</div>
